@@ -1,0 +1,20 @@
+#!/bin/bash
+
+today=`date +%Y-%m-%d`
+url="http://api.civicapps.org/restaurant-inspections/?from=2014-01-01&to=$today"
+filename="data/inspections.json"
+
+if [ ! -f $filename ]; then
+  curl --create-dirs -# -o $filename $url
+fi
+
+inspection_numbers=`cat "$filename" | jq --raw-output '.results[] | .inspection_number'`
+
+for num in $inspection_numbers; do
+  inspectfile="data/violations/$num.json"
+  vurl="http://api.civicapps.org/restaurant-inspections/inspection/$num"
+
+  if [ ! -f $inspectfile ]; then
+    curl --create-dirs -# -o $inspectfile $vurl
+  fi
+done

@@ -1,0 +1,4 @@
+#!/usr/bin/env coffee
+
+fs = require 'fs'
+csv = require 'csv'
