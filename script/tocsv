@@ -40,6 +40,11 @@ inspections = Yajl::Parser.parse(File.read("data/inspections.json"), :symbolize_
 inspections[:results].each do |ins|
   raw_data = Yajl::Parser.parse(File.read("data/violations/#{ins[:inspection_number]}.json"), :symbolize_keys => true)
   v_data = raw_data[:results][:violations]
+  zip    = ins[:address][:zip].strip
+
+  # Cleanup some bad data
+  zip = "" if zip == '&nbsp;'
+  zip = zip.split('-').first
 
   v_data.each do |v|
     law = v[:law]
@@ -49,8 +54,8 @@ inspections[:results].each do |ins|
       ins[:inspection_number],
       ins[:restaurant_id],
       raw_data[:results][:date],
-      law,
-      rule,
+      law.strip,
+      rule.strip,
       v[:violation_comments],
       v[:corrective_text],
       v[:corrective_comments]
@@ -66,7 +71,7 @@ inspections[:results].each do |ins|
     ins[:date],
     ins[:address][:street],
     ins[:address][:city],
-    ins[:address][:zip],
+    zip,
     ins[:location][:Latitude],
     ins[:location][:Longitude]
   ]

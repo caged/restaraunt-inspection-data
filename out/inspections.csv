@@ -94,7 +94,7 @@ id,score,name,rest_id,type,date,street,city,zip,lat,lon
 7905881,82,Pizza Ultimania,2145,FoodSvcSemi,2014-11-24,3508 SE 52nd Ave,Portland,97206,45.497033383,-122.608727672
 9005088,97,Extracto,884,FoodSvcSemi,2014-11-24,2921 NE Killingsworth,Portland,97211,45.562923518,-122.635376001
 6205081,100,PDX Laurelwood Public House Brewery E2200,2032,FoodSvcSemi,2014-11-24,7000 NE Airport Way,Portland,97218,45.589585486,-122.594256836
-2205805,92,Juvenile Justice Complex Courtyard Cafe Catering,7562,FoodSvcSemi,2014-11-24,1401 NE 68th St,Portland,&nbsp;,,
+2205805,92,Juvenile Justice Complex Courtyard Cafe Catering,7562,FoodSvcSemi,2014-11-24,1401 NE 68th St,Portland,,,
 6205082,100,PDX United Red Carpet Club Concourse E,2045,FoodSvcSemi,2014-11-24,7000 NE Airport Way,Portland,97218,45.589585486,-122.594256836
 6205084,97,PDX Wendys  C2076,2046,FoodSvcSemi,2014-11-24,7000 NE Airport Way,Portland,97218,45.589585486,-122.594256836
 6205083,100,PDX Wendys  D2216,2047,FoodSvcSemi,2014-11-24,7000 NE AIRPORT WAY CONCOURSE D,Portland,97218,45.589585486,-122.594256836
@@ -278,7 +278,7 @@ id,score,name,rest_id,type,date,street,city,zip,lat,lon
 9005073,100,Lauretta Jeans,6576,FoodSvcSemi,2014-11-16,3402 SE Division,Portland,97202,45.504620000,-122.629436000
 9005072,100,Tugboat Brewing Co,2946,FoodSvcSemi,2014-11-16,711 SW Ankeny,Portland,97205,45.522729553,-122.678195439
 9005074,100,Salt and Straw Division,6791,FoodSvcSemi,2014-11-16,3335 SE Division St,Portland,97202,45.504814000,-122.630847000
-9005071,92,Cibo Pizzeria,552,FoodSvcSemi,2014-11-16,3539 SE Division,Portland,"",45.505010686,-122.627919985
+9005071,92,Cibo Pizzeria,552,FoodSvcSemi,2014-11-16,3539 SE Division,Portland,,45.505010686,-122.627919985
 6805722,100,Jim Dandys Drive In,1324,FoodSvcSemi,2014-11-15,9626 NE Sandy Blvd,Portland,97220,45.558402942,-122.563059571
 6805725,97,Tamaleria y Jugos,2810,FoodSvcSemi,2014-11-15,11518 NE Sandy Blvd,Portland,97220,45.557522705,-122.543878334
 7905848,84,Powell Seafood Restaurant,2207,FoodSvcSemi,2014-11-14,6633 SE Powell Blvd,Portland,97206,45.497714177,-122.594864455
@@ -641,7 +641,7 @@ id,score,name,rest_id,type,date,street,city,zip,lat,lon
 7905792,0,Tik Tok Restaurant Bar,2895,FoodSvcREinspct,2014-10-29,11215 SE Division,Portland,97266,45.504479592,-122.547474779
 8505493,0,Jin Wah SE,6543,FoodSvcREinspct,2014-10-29,8001 SE Powell Blvd #K,Portland,97206,45.498565000,-122.581331000
 9505446,100,Starbucks Coffee 18729,6831,FoodSvcSemi,2014-10-29,1510 NE 122 Ave,Portland,97230,45.533883000,-122.537176000
-8204704,92,Sin Ju Restaurant,2498,FoodSvcSemi,2014-10-29,1022 NW Johnson St,Portland,97209-3024,45.528307429,-122.681807930
+8204704,92,Sin Ju Restaurant,2498,FoodSvcSemi,2014-10-29,1022 NW Johnson St,Portland,97209,45.528307429,-122.681807930
 9505445,95,Annies Restaurant,104,FoodSvcSemi,2014-10-29,17440 SE Stark,Portland,97233,45.518867855,-122.483387755
 6608782,0,Aquariva,111,FoodSvcREinspct,2014-10-29,0470 SW Hamilton Court,Portland,97201,45.489843368,-122.671756677
 9903938,95,Billy Rays Neighborhood Dive,258,FoodSvcSemi,2014-10-29,2216 NE Martin Luther King,Portland,97212,45.538990936,-122.661288253
@@ -1197,7 +1197,7 @@ id,score,name,rest_id,type,date,street,city,zip,lat,lon
 9004996,90,TBD,2836,FoodSvcSemi,2014-09-29,3384 SE Division,Portland,97202,45.504602252,-122.630212817
 8505408,81,Tik Tok Restaurant and Bar,2894,FoodSvcSemi,2014-09-29,3330 SE 82nd Ave,Portland,97266,45.498110125,-122.578224351
 6105960,100,Yukon Tavern,3103,FoodSvcSemi,2014-09-29,5819 SE Milwaukie,Portland,97202,45.480676060,-122.649624297
-8204666,100,Fireside,4040,FoodSvcSemi,2014-09-29,801 NW 23rd Ave,Portland,"",45.528578982,-122.698768885
+8204666,100,Fireside,4040,FoodSvcSemi,2014-09-29,801 NW 23rd Ave,Portland,,45.528578982,-122.698768885
 9004995,92,Shigezo Sushi Izakaya,5607,FoodSvcSemi,2014-09-29,3810 SE Division st,Portland,97202,45.504566156,-122.623937404
 6204998,90,Pawfee House,7023,FoodSvcSemi,2014-09-29,6035 NE Halseay,Portland,97213,45.533931000,-122.601300000
 8106312,95,Casa Diablo,470,FoodSvcSemi,2014-09-29,2839 NW St Helens Rd,Portland,97210,45.543008856,-122.721398920
@@ -1633,7 +1633,7 @@ id,score,name,rest_id,type,date,street,city,zip,lat,lon
 6105946,92,Subway 20295,2687,FoodSvcSemi,2014-08-28,1325 SE Tacoma,Portland,97202,45.464541812,-122.652344049
 3608079,97,Subway Linnton,2725,FoodSvcSemi,2014-08-28,11324 NW St Helens Rd,Portland,97231,45.603069993,-122.788556826
 8403820,95,Village Inn Pancake,3009,FoodSvcSemi,2014-08-28,1621 NE 10th Ave,Portland,97232,45.534685292,-122.655871471
-8106264,95,Western Bike Works,3046,FoodSvcSemi,2014-08-28,1015 NW 17th Ave,Portland,"",45.530270511,-122.688776517
+8106264,95,Western Bike Works,3046,FoodSvcSemi,2014-08-28,1015 NW 17th Ave,Portland,,45.530270511,-122.688776517
 6608627,83,Easy Sandwich,6430,FoodSvcSemi,2014-08-28,2137 E Burnside Blvd,Portland,97209,45.523162000,-122.643768000
 7704570,97,OHSU Sams,7178,FoodSvcSemi,2014-08-28,3181 SW Sam Jackson Park Rd  UHS19,Portland,97239,45.523451500,-122.676207100
 6608625,89,Beaker and Flask,202,FoodSvcSemi,2014-08-27,727 SE Washington St,Portland,97214,45.518866523,-122.657957504
@@ -1803,7 +1803,7 @@ id,score,name,rest_id,type,date,street,city,zip,lat,lon
 6105933,100,Sushi Mazi,2744,FoodSvcSemi,2014-08-14,2126 SE Division St,Portland,97202,45.504764239,-122.644319657
 6608595,97,Two Brothers Cafe Grill,2956,FoodSvcSemi,2014-08-14,829 SE 39th Ave,Portland,97214,45.516674487,-122.623213706
 9903811,0,UCHU,2960,FoodSvcREinspct,2014-08-14,3940 N Mississippi Ave,Portland,97227,45.551334172,-122.675223451
-8106241,100,Cafe Theobroma,3543,FoodSvcSemi,2014-08-14,1037 NW Flander st,Portland,"",45.526175717,-122.681729070
+8106241,100,Cafe Theobroma,3543,FoodSvcSemi,2014-08-14,1037 NW Flander st,Portland,,45.526175717,-122.681729070
 6805602,0,McDonalds Restaurant,7110,FoodSvcREinspct,2014-08-14,12026 NE Airport Way,Portland,97220,45.566831200,-122.537169500
 3608039,100,Red Radish Catering,7446,FoodSvcSemi,2014-08-14,4835 N Albina,Portland,97217,,
 6608587,0,442 Soccer Bar,13,FoodSvcREinspct,2014-08-13,1739 SE Hawthorne Blvd,Portland,97214,45.512247240,-122.648205834
@@ -2192,8 +2192,8 @@ id,score,name,rest_id,type,date,street,city,zip,lat,lon
 8106188,100,Cupcake Jones,666,FoodSvcSemi,2014-07-16,307 NW 10th Ave,Portland,97209,45.525260803,-122.681499956
 8106187,100,Madena Of The Pearl,1583,FoodSvcSemi,2014-07-16,432 NW 11th Ave,Portland,97209,45.526175717,-122.681729070
 6204909,100,Moon and Six Pence,1743,FoodSvcSemi,2014-07-16,2014 NE 42nd Ave,Portland,97213,45.537354337,-122.619612553
-9903767,0,New Thai Blues Restaurant,1812,FoodSvcREinspct,2014-07-16,2531 NE Alberta,Portland,97211-6344,45.559200042,-122.639192675
-9903768,100,New Thai Blues Restaurant,1812,FoodSvcSemi,2014-07-16,2531 NE Alberta,Portland,97211-6344,45.559200042,-122.639192675
+9903767,0,New Thai Blues Restaurant,1812,FoodSvcREinspct,2014-07-16,2531 NE Alberta,Portland,97211,45.559200042,-122.639192675
+9903768,100,New Thai Blues Restaurant,1812,FoodSvcSemi,2014-07-16,2531 NE Alberta,Portland,97211,45.559200042,-122.639192675
 6204907,0,Paitong Thai Cuisine,1963,FoodSvcREinspct,2014-07-16,8000 NE Glisan St,Portland,97213,45.526252689,-122.581159608
 3607954,0,Phathaya Thai Surveillance,2070,FoodSvcREinspct,2014-07-16,9440 N St Louis,Portland,97203,45.596112998,-122.750508392
 8605231,95,Red Square Cafe,2286,FoodSvcSemi,2014-07-16,4505 SE Belmont,Portland,97215,45.516738805,-122.615902180
@@ -2899,7 +2899,7 @@ id,score,name,rest_id,type,date,street,city,zip,lat,lon
 8106087,100,Jimmy Maks,1327,FoodSvcSemi,2014-06-02,221 NW 10th,Portland,97209,45.524822126,-122.681483705
 3607848,100,Patton Home,2007,FoodSvcSemi,2014-06-02,4619 N Michigan,Portland,97217,45.556510661,-122.677563879
 8204566,97,Pizza Schmizza Pub and Grub,2143,FoodSvcSemi,2014-06-02,415 SW Montgomery St,Portland,97201,45.511425863,-122.680783509
-8106084,100,Sin Ju Restaurant,2498,FoodSvcSemi,2014-06-02,1022 NW Johnson St,Portland,97209-3024,45.528307429,-122.681807930
+8106084,100,Sin Ju Restaurant,2498,FoodSvcSemi,2014-06-02,1022 NW Johnson St,Portland,97209,45.528307429,-122.681807930
 8106088,0,Teardrop Lounge,2837,FoodSvcREinspct,2014-06-02,1015 NW Everett,Portland,97209,45.525260803,-122.681499956
 8106083,95,Via Delizia,2999,FoodSvcSemi,2014-06-02,1105 NW Marshall,Portland,97209,45.531446068,-122.694298579
 8204567,0,23 Hoyt,6253,FoodSvcREinspct,2014-06-02,529 NW 23rd Ave,Portland,97210,45.526745000,-122.698504000
@@ -3135,7 +3135,7 @@ id,score,name,rest_id,type,date,street,city,zip,lat,lon
 8704373,100,Thai Herbs Restaurant,2861,FoodSvcSemi,2014-05-21,7779 SW Capitol Hwy,Portland,97219,45.468434479,-122.712458078
 9505030,80,Tin Tin Buffet,2901,FoodSvcSemi,2014-05-21,2236 SE 182nd Ave,Portland,97233,45.507395997,-122.475548466
 9903664,0,Yakuza Lounge,3087,FoodSvcREinspct,2014-05-21,5417 NE 30th Ave,Portland,97211,45.562298530,-122.635186793
-8106057,100,Fireside,4040,FoodSvcSemi,2014-05-21,801 NW 23rd Ave,Portland,"",45.528578982,-122.698768885
+8106057,100,Fireside,4040,FoodSvcSemi,2014-05-21,801 NW 23rd Ave,Portland,,45.528578982,-122.698768885
 8106058,97,South Land Whisky Kitchen,5684,FoodSvcSemi,2014-05-21,1422 NW 23rd Ave,Portland,97210,45.533139768,-122.698421573
 8704374,100,Joes Burgers PSU,6547,FoodSvcSemi,2014-05-21,540 SW College St,Portland,97201,45.509630900,-122.683271200
 6608373,0,Kachka,7097,FoodSvcREinspct,2014-05-21,720 SE Grand Ave,Portland,97214,45.517597100,-122.660733500
@@ -4063,7 +4063,7 @@ id,score,name,rest_id,type,date,street,city,zip,lat,lon
 9504926,97,Burger King 7759,383,FoodSvcSemi,2014-04-04,2301 NE 181st Ave,Portland,97230,45.539716667,-122.477745450
 9903583,0,Caffe Destino,432,FoodSvcREinspct,2014-04-04,1339 NE Fremont St,Portland,97212,45.548387814,-122.652101247
 6105727,95,Cannons Rib Express,450,FoodSvcSemi,2014-04-04,5410 NE 33rd Ave,Portland,97211,45.562495327,-122.630344695
-9004708,92,Cibo Pizzeria,552,FoodSvcSemi,2014-04-04,3539 SE Division,Portland,"",45.505010686,-122.627919985
+9004708,92,Cibo Pizzeria,552,FoodSvcSemi,2014-04-04,3539 SE Division,Portland,,45.505010686,-122.627919985
 7905397,77,Da Hui,670,FoodSvcSemi,2014-04-04,6506 SE Foster Rd,Portland,97206,45.489161295,-122.595786694
 9903584,82,Daddy Mojos Cafe,671,FoodSvcSemi,2014-04-04,1501 NE Fremont,Portland,97212,45.548295557,-122.650366051
 9504923,100,Division Street Cinemas,730,FoodSvcSemi,2014-04-04,16603 SE Division St,Portland,97236,45.504635402,-122.492458761
@@ -4129,7 +4129,7 @@ id,score,name,rest_id,type,date,street,city,zip,lat,lon
 8505050,100,Marathon Tavern,1606,FoodSvcSemi,2014-04-01,1735 W Burnside,Portland,97209,45.523259227,-122.688919766
 6105720,100,Mississippi Pizza Pub,1718,FoodSvcSemi,2014-04-01,3552 N Mississippi Ave,Portland,97227,45.548320316,-122.675474836
 6608241,0,Mudd Works Roastery,1769,FoodSvcREinspct,2014-04-01,537 SE Ash St # 108,Portland,97214,45.521722722,-122.660012699
-9903576,85,New Thai Blues Restaurant,1812,FoodSvcSemi,2014-04-01,2531 NE Alberta,Portland,97211-6344,45.559200042,-122.639192675
+9903576,85,New Thai Blues Restaurant,1812,FoodSvcSemi,2014-04-01,2531 NE Alberta,Portland,97211,45.559200042,-122.639192675
 8505051,95,Nob Hill Bar Grill,1829,FoodSvcSemi,2014-04-01,937 NW 23rd Ave,Portland,97210,45.529342371,-122.698670229
 7905386,0,Putters Bar Grill,2226,FoodSvcREinspct,2014-04-01,4506 SE Woodstock,Portland,97206,45.479124093,-122.616368989
 9903574,0,Sams Billiards,2411,FoodSvcREinspct,2014-04-01,1845 NE 41st Ave,Portland,97212,45.536363765,-122.621234608
@@ -4866,7 +4866,7 @@ id,score,name,rest_id,type,date,street,city,zip,lat,lon
 3607676,100,Starbucks Coffee Jantzen Beach,2638,FoodSvcSemi,2014-02-24,12105 N Center Ave,Portland,97217,45.610662560,-122.680582483
 8105875,97,Toast and Pho Restaurant,2910,FoodSvcSemi,2014-02-24,103 NW 21st Ave,Portland,97209,45.523701870,-122.694742970
 9004636,97,Ugly Mug Coffeehouse,2962,FoodSvcSemi,2014-02-24,8017 SE 13th Ave,Portland,97202,45.465504209,-122.653073520
-8204495,88,Cafe Theobroma,3543,FoodSvcSemi,2014-02-24,1037 NW Flander st,Portland,"",45.526175717,-122.681729070
+8204495,88,Cafe Theobroma,3543,FoodSvcSemi,2014-02-24,1037 NW Flander st,Portland,,45.526175717,-122.681729070
 9004630,100,Jimmy Johns Gourmet Sandwiches,1326,FoodSvcSemi,2014-02-23,733 SW 10th Ave,Portland,97205,45.519802260,-122.682296487
 9004629,97,Starbucks Coffee 401,2598,FoodSvcSemi,2014-02-23,720 SW Broadway,Portland,97205,45.518876707,-122.679290708
 9004631,97,Stumptown Coffee Roasters,2663,FoodSvcSemi,2014-02-23,1026 SW Stark St,Portland,97205,45.519127757,-122.654957676
@@ -4942,7 +4942,7 @@ id,score,name,rest_id,type,date,street,city,zip,lat,lon
 8604928,100,Starbucks Coffee 3714,2597,FoodSvcSemi,2014-02-20,1621 NE Grand Ave,Portland,97232,45.534510230,-122.661075862
 9504821,92,Taco Salsa Restaurant,2796,FoodSvcSemi,2014-02-20,18727 E Burnside,Portland,97233,45.520827693,-122.470613625
 7905301,90,Tik Tok Restaurant and Bar,2894,FoodSvcSemi,2014-02-20,3330 SE 82nd Ave,Portland,97266,45.498110125,-122.578224351
-8105861,100,Western Bike Works,3046,FoodSvcSemi,2014-02-20,1015 NW 17th Ave,Portland,"",45.530270511,-122.688776517
+8105861,100,Western Bike Works,3046,FoodSvcSemi,2014-02-20,1015 NW 17th Ave,Portland,,45.530270511,-122.688776517
 8403765,95,Yakuza Lounge,3087,FoodSvcSemi,2014-02-20,5417 NE 30th Ave,Portland,97211,45.562298530,-122.635186793
 3607672,92,Cathedral Coffee,6364,FoodSvcSemi,2014-02-20,7530 N Willamette Blvd,Portland,97203,45.584145000,-122.746302000
 8403762,0,Anna Bannanas Alberta,100,FoodSvcREinspct,2014-02-19,2403 NE Alberta,Portland,97211,45.559249033,-122.640734470

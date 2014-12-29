@@ -1,0 +1,11 @@
+#!/bin/bash
+dbname=portland
+
+csv2psql --utf8 out/inspections.csv inspections | psql -d $dbname
+csv2psql --datatype "corrective_comments,violation_comments:str" out/violations.csv violations | psql -d $dbname
+
+psql -c "alter table inspections add column pkey bigserial primary key" $dbname
+psql -c "create index inspection_id_idx on inspections (id)" $dbname
+psql -c "create index rest_id_idx on violations (rest_id)" $dbname
+psql -c "create index violations_inspection_id_idx on violations (inspection_id)" $dbname
+psql -c "create index law_idx on violations (law)" $dbname
