@@ -1,20 +1,25 @@
 drop table if exists latest_inspections;
 
-create table latest_inspections AS
-  (SELECT DISTINCT ON (rest_id) rest_id, date, name,
+create table latest_inspections as
+  (select distinct on (rest_id) rest_id, date, id, name,
                                                score,
                                                pkey,
                                                type,
                                                lat,
                                                lon,
-                                               st_setsrid(st_makepoint(lon, lat), 4326) AS geom
-   FROM inspections
-   WHERE score > 0
-     AND lat IS NOT NULL
-     AND lat != 0
-     AND lon IS NOT NULL
-     AND lon != 0
-   ORDER BY rest_id, date DESC);
+                                               case
+                                                  when score <= 80 then 'c'
+                                                  when score >= 80 and score < 90 then 'b'
+                                                  else 'a'
+                                                end as grade,
+                                               st_setsrid(st_makepoint(lon, lat), 4326) as geom
+   from inspections
+   where score > 0
+     and lat is not null
+     and lat != 0
+     and lon is not null
+     and lon != 0
+   order by rest_id, date desc);
 
 alter table latest_inspections
  alter column geom type geometry(Point, 4326)

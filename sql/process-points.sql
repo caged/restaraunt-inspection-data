@@ -15,7 +15,7 @@ create temporary table inspection_overlappoing_points as
 -- Using the number of points occupying a space, create a buffer region which
 -- we'll use later to disperse points in. More points equals a larger buffer zone.
 create temporary table inspection_point_buffers as
-  select st_buffer(geom, 0.000003 * count, 'quad_segs=8') as geom2
+  select st_buffer(geom, 0.0000035 * count, 'quad_segs=8') as geom2
   from inspection_overlappoing_points;
 
 -- Randomly place points that occupy the same space using our buffer zones we

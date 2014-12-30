@@ -1,7 +1,0 @@
-#!/bin/bash
-
-dbname=portland
-
-psql -f sql/_random_point.sql $dbname
-psql -f sql/latest-inspections.sql $dbname
-psql -f sql/process-points.sql $dbname

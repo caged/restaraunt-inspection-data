@@ -3,7 +3,6 @@
 require 'yajl'
 require 'csv'
 
-# {:name=>"White Eagle Cafe", :inspection_number=>"9404055", :restaurant_id=>"3053", :type=>"FoodSvcSemi", :date=>"2014-01-02", :score=>"100", :address=>{:street=>"836 N Russell", :city=>"Portland", :zip=>"97227"}, :location=>{:GISX=>"7644780.02839", :GISY=>"690762.749092", :Latitude=>"45.540788960", :Longitude=>"-122.675446955"}
 inspections_out = CSV.open('out/inspections.csv', 'w', write_headers: true, headers: %w(
   id
   score
@@ -18,7 +17,6 @@ inspections_out = CSV.open('out/inspections.csv', 'w', write_headers: true, head
   lon
 ))
 
-# {:status=>"ok", :results=>{:restaurant_name=>"Moes Deli at Jubitz Truck Stop", :address=>{:street=>"10350 N Vancouver Way", :city=>"Portland", :zip=>"97217"}, :location=>{:GISX=>"7646882.05052", :GISY=>"711482.128711", :Latitude=>"45.597749164", :Longitude=>"-122.669417036"}, :inspection_number=>"3608256", :date=>"2014-12-01", :type=>"FoodSvcREinspct", :score=>"100", :violations=>[{:law=>"99V2", :violation_rule=>"*2nd RE-INSPECTION FOR CALENDAR YEAR*Multnomah County Environmental Health will charge a $285.00 re-inspection fee for more than 2 re-inspections in a calendar year connected with a food service facility. The fee for each re-inspection is $285.00 (Multnomah County Code). This is your SECOND re-inspection for the calendar year.", :violation_comments=>"", :corrective_text=>" ", :corrective_comments=>""}, {:law=>"99Z", :violation_rule=>"A re-inspection was performed on this date to recheck Priority and Priority Foundation violation(s) noted during an inspection.The results of the recheck are:", :violation_comments=>"Recheck on the the prep cooler:Temperature reading at 40.4 degrees.", :corrective_text=>" ", :corrective_comments=>""}]}}
 violations_out = CSV.open('out/violations.csv', 'w', write_headers: true, headers: %w(
   inspection_id
   rest_id
@@ -76,8 +74,6 @@ inspections[:results].each do |ins|
     ins[:location][:Longitude]
   ]
 end
-
-#puts violations[:laws].sort_by { |_,v| v }.reverse.inspect
 
 inspections_out.close
 violations_out.close
