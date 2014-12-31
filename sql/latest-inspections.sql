@@ -8,7 +8,8 @@ create table latest_inspections as
                                                lat,
                                                lon,
                                                case
-                                                  when score <= 80 then 'c'
+                                                  when score < 70 then 'd'
+                                                  when score >= 70 and score < 80 then 'c'
                                                   when score >= 80 and score < 90 then 'b'
                                                   else 'a'
                                                 end as grade,
