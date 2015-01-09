@@ -1,7 +1,7 @@
 drop table if exists latest_inspections;
 
 create table latest_inspections as
-  (select distinct on (rest_id) rest_id, date, id, name,
+  (select distinct on (inspections.rest_id) inspections.rest_id, inspections.date, id, name,
                                                score,
                                                pkey,
                                                type,
@@ -13,6 +13,7 @@ create table latest_inspections as
                                                   when score >= 80 and score < 90 then 'b'
                                                   else 'a'
                                                 end as grade,
+                                               (select string_agg(law, ',') as laws from violations where inspection_id = id and law !~ '^99|98' group by inspection_id) as laws,
                                                st_setsrid(st_makepoint(lon, lat), 4326) as geom
    from inspections
    where score > 0
@@ -20,7 +21,7 @@ create table latest_inspections as
      and lat != 0
      and lon is not null
      and lon != 0
-   order by rest_id, date desc);
+   order by inspections.rest_id, inspections.date desc);
 
 alter table latest_inspections
  alter column geom type geometry(Point, 4326)
