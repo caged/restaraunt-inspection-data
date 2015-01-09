@@ -10,5 +10,5 @@ psql -f sql/latest-inspections.sql $dbname
 psql -f sql/process-points.sql $dbname
 
 psql -c "copy (select date, score, name, lat, lon from inspections) to '$(pwd)/out/inspections.csv' csv header" $dbname
-psql -c "copy (select id, rest_id, date, score, name, lat, lon from latest_inspections) to '$(pwd)/out/latest-inspections.csv' csv header" $dbname
-psql -c "copy (select violations.* from latest_inspections inner join violations on violations.inspection_id = latest_inspections.id) to '$(pwd)/out/latest-violations.csv' csv header" $dbname
+psql -c "copy (select id, rest_id, date, score, name, laws, lat, lon from latest_inspections) to '$(pwd)/out/latest-inspections.csv' csv header" $dbname
+psql -c "copy (select violations.inspection_id, violations.law, violations.violation_comments, violations.corrective_comments from latest_inspections inner join violations on violations.inspection_id = latest_inspections.id) to '$(pwd)/out/latest-violations.csv' csv header" $dbname
