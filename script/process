@@ -2,8 +2,8 @@
 
 dbname=portland
 
-script/tocsv
-script/psqlimport
+# script/tocsv
+# script/psqlimport
 
 psql -f sql/_random_point.sql $dbname
 psql -f sql/latest-inspections.sql $dbname
